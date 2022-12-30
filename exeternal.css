@@ -32,3 +32,28 @@ text-transform: capitalize;} */
     padding-bottom: 30px;
     margin: 20 10 25 30;
 }
+.container{
+    font-size: 20px;
+    border: 1px solid red;
+    width: 300px;
+    height: 200px;
+    text-overflow:ellipsis;
+    overflow-y: auto;
+    overflow-x: auto;
+    text-decoration-color: aquamarine;
+    font-style: italic;
+    text-rendering: geometricPrecision;
+
+}
+div.container:hover{
+overflow: visible;
+
+}
+
+.container1{
+    text-shadow:5px 6px 4px rgb(222, 25, 143);
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration:underline ;
+    
+}
