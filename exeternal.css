@@ -57,3 +57,13 @@ overflow: visible;
     text-decoration:underline ;
     
 }
+img:hover{
+    opacity: .5;
+}
+
+div.parent{
+background-image: url('./image4.jpg');
+background-repeat:initial;
+height: 1000px;
+width: 100vw;
+}
