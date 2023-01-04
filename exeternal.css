@@ -63,7 +63,6 @@ img:hover{
 
 div.parent{
 background-image: url('./image4.jpg');
-background-repeat:initial;
-height: 1000px;
-width: 100vw;
+background-repeat:no-repeat;
+background-size: 1000px 1000px;
 }
