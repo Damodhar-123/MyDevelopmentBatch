@@ -1,0 +1,14 @@
+.backgroundimage{
+    background-image: url(./image4.jpg);
+    color: red;
+    height: 1000px;
+    width: 1000px;
+    background-repeat: no-repeat;
+    background-size: 1200px 1200px; 
+    position: absolute;
+    /* left: 30px; */
+}
+.content{
+    margin-left:390px;
+    position: absolute;
+}
