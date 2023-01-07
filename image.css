@@ -2,10 +2,10 @@
     height: 1000px;
     width: 1000px;
     border: 2px solid black;
-    background-image: url(./image4.jpg);
+    background-image: url(../../images/images6.png);
     color: rgb(217, 29, 157);
     background-repeat: no-repeat;
-    background-size: 800px 800px;
+     background-size: 1000px 1000px; 
     margin: 30px;
 
 }
