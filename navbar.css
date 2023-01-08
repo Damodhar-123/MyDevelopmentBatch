@@ -1,0 +1,17 @@
+.nav{
+    background-color:aquamarine;
+    padding: 10px;
+    height: 40px;
+    
+}
+.drop{
+    background-color: rgb(13, 103, 188);
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 20px;
+}
+.drop:hover{
+    opacity: .5;
+    
+}
