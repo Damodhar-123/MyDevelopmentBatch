@@ -1,7 +1,7 @@
 .nav{
-    background-color:aquamarine;
+    background-color:rgb(105, 235, 25);
     padding: 10px;
-    height: 40px;
+    height: 30px;
     
 }
 .drop{
@@ -9,7 +9,8 @@
     color: white;
     cursor: pointer;
     border: none;
-    height: 20px;
+    height: 30px;
+    font-size: 25px;
 }
 .drop:hover{
     opacity: .5;
@@ -19,4 +20,14 @@
 div.nav a{
     text-decoration: none;
     padding: 20px;
+    font-size: 25px;
+}
+.drop {
+    text-decoration: none;
+
+}
+.down a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
 }
