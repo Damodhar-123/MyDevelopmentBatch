@@ -1,10 +1,10 @@
 .nav{
     background-color:rgb(105, 235, 25);
     padding: 10px;
-    height: 30px;
+    height: 25px;
     
 }
-.drop{
+.dropbtn{
     background-color: rgb(13, 103, 188);
     color: white;
     cursor: pointer;
@@ -12,7 +12,7 @@
     height: 30px;
     font-size: 25px;
 }
-.drop:hover{
+.dropbtn:hover{
     opacity: .5;
     background-color: red;
     
@@ -22,12 +22,14 @@ div.nav a{
     padding: 20px;
     font-size: 25px;
 }
-.drop {
+.dropbtn {
     text-decoration: none;
 
 }
-.down a{
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
+.downcontent a{
+    min-width: 150px;
+    display: block;
+}
+div.nav .dropbtn:hover .downcontent a{
+    display: block;
 }
