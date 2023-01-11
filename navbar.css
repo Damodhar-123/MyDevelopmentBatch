@@ -1,35 +1,59 @@
-.nav{
-    background-color:rgb(105, 235, 25);
-    padding: 10px;
-    height: 25px;
-    
+.parent {
+    background-color: rgb(221, 213, 203);
+    min-height: 100%;
 }
-.dropbtn{
-    background-color: rgb(13, 103, 188);
-    color: white;
-    cursor: pointer;
-    border: none;
-    height: 30px;
-    font-size: 25px;
-}
-.dropbtn:hover{
-    opacity: .5;
-    background-color: red;
-    
-}
-div.nav a{
-    text-decoration: none;
-    padding: 20px;
-    font-size: 25px;
-}
-.dropbtn {
-    text-decoration: none;
+
+.nav {
+    background-color: rgb(109, 232, 38);
+    overflow: hidden;
 
 }
-.downcontent a{
-    min-width: 150px;
+
+.nav a {
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 25px;
+    float: left;
+}
+
+.cantainer {
+    overflow: hidden;
+    float: left;
+}
+
+.dropbtn {
+    background-color: rgb(20, 116, 225);
+    font-size: 25px;
+    padding: 5px 5px;
+    height: 39px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.dropbtn:hover {
+    background-color: rgb(235, 82, 27);
+    opacity: .6;
+}
+
+.downcontent {
+    display: none;
+    position: absolute;
+    min-width: 133px;
+    background-color: rgb(36, 226, 226);
+}
+
+.downcontent a {
+    display: block;
+    float: none;
+    padding: 10px 10px;
+
+}
+
+.cantainer:hover .downcontent {
     display: block;
 }
-div.nav .dropbtn:hover .downcontent a{
-    display: block;
+
+.downcontent a:hover {
+    background-color: rgb(217, 141, 27);
 }
