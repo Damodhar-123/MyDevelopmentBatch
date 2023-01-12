@@ -1,11 +1,15 @@
 .parent {
     background-color: rgb(221, 213, 203);
-    min-height: 100%;
+    min-height: 300%;
 }
 
 .nav {
     background-color: rgb(109, 232, 38);
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    min-height: 70px;
 
 }
 
@@ -29,6 +33,7 @@
     margin-top: 10px;
     cursor: pointer;
     color: white;
+    border: none;
 }
 
 .dropbtn:hover {
@@ -56,4 +61,44 @@
 
 .downcontent a:hover {
     background-color: rgb(217, 141, 27);
+}
+.downcontent-link3{
+    overflow: hidden;
+
+}
+.link3-right{
+    position: absolute;
+    min-width: 141px;
+    background-color: rgb(36, 226, 226);
+    display: none;
+    left:133px ;
+    top: 99px;
+}
+.downcontent-link3:hover .link3-right{
+    display: block;
+}
+.sidebar{
+    background-color: rgb(211, 244, 79);
+    position: fixed;
+    min-height: 100%;
+    left: 8px;
+    width: 110px;
+    top: 75px;
+}
+.footer{
+    background-color: deeppink;
+    color: black;
+    position: fixed;
+    bottom: 0px;
+    left: 118px;
+    font-size: 23px;
+    height: 25px;
+    padding: 5px;
+    min-width: 100%;
+    z-index: 1;
+}
+.middle-content{
+    position:absolute;
+    left: 118px;
+    padding: 6px;
 }
