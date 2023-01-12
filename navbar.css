@@ -1,11 +1,14 @@
 .parent {
     background-color: rgb(221, 213, 203);
-    min-height: 300%;
+    min-height: 559%;
+    position: relative;
+
+    
 }
 
 .nav {
     background-color: rgb(109, 232, 38);
-    /* overflow: hidden; */
+    /* overflow: hidden;  */
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -21,7 +24,7 @@
 }
 
 .cantainer {
-    overflow: hidden;
+    overflow: hidden; 
     float: left;
 }
 
@@ -80,25 +83,35 @@
 .sidebar{
     background-color: rgb(211, 244, 79);
     position: fixed;
+    width: 120px;
+    min-height: 559px; 
+    top: 75px;
+    overflow-y: scroll;
+    height: 95%;
+    /* position:fixed;
     min-height: 100%;
     left: 8px;
     width: 110px;
     top: 75px;
+    overflow-y: scroll; */
+
 }
 .footer{
-    background-color: deeppink;
+    background-color: rgb(234, 164, 201);
     color: black;
     position: fixed;
     bottom: 0px;
     left: 118px;
     font-size: 23px;
     height: 25px;
-    padding: 5px;
-    min-width: 100%;
+    text-align: center;
+    min-width: 99%;
     z-index: 1;
 }
 .middle-content{
     position:absolute;
     left: 118px;
     padding: 6px;
+    overflow-y: scroll;
+
 }
