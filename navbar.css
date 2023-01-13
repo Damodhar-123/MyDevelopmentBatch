@@ -2,6 +2,8 @@
     background-color: rgb(221, 213, 203);
     min-height: 559%;
     position: relative;
+    height: 100%;
+    background-size: 100%;
 
     
 }
@@ -74,7 +76,7 @@
     min-width: 141px;
     background-color: rgb(36, 226, 226);
     display: none;
-    left:133px ;
+    left:134px ;
     top: 99px;
 }
 .downcontent-link3:hover .link3-right{
@@ -101,17 +103,23 @@
     color: black;
     position: fixed;
     bottom: 0px;
-    left: 118px;
     font-size: 23px;
-    height: 25px;
+    height: 34px;
     text-align: center;
     min-width: 99%;
     z-index: 1;
+    text-transform: capitalize;
 }
 .middle-content{
     position:absolute;
     left: 118px;
     padding: 6px;
     overflow-y: scroll;
+    min-height: 50%;
+    height: 98%;
 
+}
+img{
+    margin: 20px;
+    border: 2px solid red;
 }
