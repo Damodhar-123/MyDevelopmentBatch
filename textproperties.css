@@ -1,0 +1,32 @@
+.main{
+    background-color: beige;
+    height: 100%;
+    width: 100%;
+}
+.content{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(226, 218, 142);
+    word-break: keep-all;
+}
+.content1{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(189, 224, 225);
+    word-break:break-all;
+}
+.content2{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(204, 132, 220);
+    word-wrap: break-word;
+
+    
+}
+.column{
+    column-count: 4;
+    column-gap: 30px;
+    column-rule: 2px dotted rgb(21, 4, 4);
+
+}
+
