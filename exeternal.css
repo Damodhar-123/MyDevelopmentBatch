@@ -38,15 +38,23 @@ text-transform: capitalize;} */
     width: 300px;
     height: 200px;
     text-overflow:ellipsis;
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow: hidden;
     text-decoration-color: aquamarine;
     font-style: italic;
-    text-rendering: geometricPrecision;
+}
 
+
+.container2{
+    width: 300px;
+    height: 200px;
+    /* text-overflow:ellipsis; */
+    overflow-y: scroll;
+    overflow-x:scroll;
+    font-size: 20px;
 }
 div.container:hover{
 overflow: visible;
+color: red;
 
 }
 
@@ -62,7 +70,9 @@ img:hover{
 }
 
 div.parent{
-background-image: url('./image4.jpg');
+background-image: url(tiger.png);
 background-repeat:no-repeat;
-background-size: 1000px 1000px;
+background-size: 100% 100%;
+/* min-height: max-content; */
+height: 2108px;
 }
