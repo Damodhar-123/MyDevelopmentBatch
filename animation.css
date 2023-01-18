@@ -1,0 +1,116 @@
+/* .Animation{
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+    background-color: aqua;
+    animation-name: myAnnimation;
+    animation: duration 7s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes myAnnimation {
+ /* from{
+    background-color: blueviolet;
+    font-size: 20px;
+ }
+ to{
+    background-color: red; }
+    */
+
+/*  
+ 0%{
+    background-color: aliceblue;
+ }
+ 20%{
+    background-color: aquamarine;
+ }
+ 50%{
+    background-color: yellow;
+ }
+ 75%{
+    background-color: blue;
+ }
+ 100%{
+    background-color: green;
+ } */
+ .animation{
+    width: 300px;
+    height: 400px;
+    background-color: brown;
+    padding: 15px;
+    animation-name: myAnnimation;
+    animation-duration: 6s;  /* default  animation-duration is :0s  */
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    margin: 30px;
+}
+
+@keyframes myAnnimation{
+    /* from {
+        background-color: blue;
+        font-size: 40px;
+    }
+    to { 
+        background-color: yellowgreen;
+        font-size: 20px;
+    } */
+    10% {
+        background-color: orange;
+        left: 0px;
+        width: 400px;
+    }
+    25%{
+        background-color: aqua;
+        font-size: 50px;
+        width: 600px;
+        height: 300px;
+    }
+    25%{
+        background-color: yellow;
+        font-size: 20px;
+        
+    }
+    50% {
+        background-color: rgb(255, 0, 187);
+        font-size: 75px;
+    }
+    75%{
+        background-color: cadetblue;
+        width: 1200px;
+        height: 100px;
+        font-size: 50px;
+    }
+    100%{
+        background-color: rgb(0, 255, 8);
+        width: 400px;
+        height: 200px;
+    }
+ }
+.animation1{
+    width: 150px;
+    margin-top: 10px;
+    height: 150px;
+    background-color: chartreuse;
+    font-size: 25px;
+    transition: height 1s, width 1s, transform 1s;
+}
+.animation1:hover{
+ transform:rotate(360deg);
+ width: 600px;
+ height: 400px;
+ background-color: rgb(228, 27, 201); 
+}
+/* 
+.animation1{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.animation1:hover{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(27, 228, 43);
+    transform: rotate(-360deg);
+} */
