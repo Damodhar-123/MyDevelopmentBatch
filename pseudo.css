@@ -1,0 +1,64 @@
+h2{
+    background-color: rgb(232, 240, 142);
+    font-size: 20px;
+
+}
+p{
+    display: none;
+}
+h2:hover p{
+    display: block;
+    background-color: chartreuse;
+    font-size: 30px;
+}
+/* 
+input:focus{
+    background-color:bisque;
+} */
+input[ type=text]:focus{
+    background-color: rgb(179, 221, 221);
+}
+input[type=number ]:focus{
+    background-color: rgb(217, 148, 217);
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: rgb(219, 21, 21);
+}
+a:active{
+    color: rgb(21, 210, 18);
+}
+input:checked{
+    height: 30px;
+    width: 30px;
+}
+input[ type=number]:disabled{
+    background-color: aquamarine;
+}
+a[target]{
+    background-color: burlywood;
+}
+a[target=_blank]{
+    background-color: beige;
+}
+h3.after::after{
+    content: "@Maske";
+    color: greenyellow;
+
+}
+h4.before::before{
+    content: "Damodhar_";
+    color: blueviolet;
+}
+h5::first-letter{
+    font-size: 20px;
+    color: brown;
+
+}
+h6::first-line{
+    color: blueviolet;
+    font-size: 20px;
+}
