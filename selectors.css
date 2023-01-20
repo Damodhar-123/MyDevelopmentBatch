@@ -1,0 +1,27 @@
+p{
+    background-color: aqua;
+    font-size: 20px;
+    text-align: center;
+}
+#I{
+    background-color: aquamarine;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid red;
+}
+.content{
+    background-color: rgb(206, 237, 237);
+    border: 1px dotted red;
+    text-transform: capitalize;
+
+}
+*{
+    text-transform: capitalize;
+    color: blue;
+    text-decoration: underline;
+    font-size: 20px;
+}
+p, h1,h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: -1px -1px;
+}
