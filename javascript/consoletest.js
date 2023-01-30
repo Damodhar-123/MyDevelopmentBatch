@@ -16,3 +16,4 @@ console.log(num1 + num2 +num5 + myFirstName + num3 + num4);
 console.log(num1 + num2 + " " + mySurname + ' ' + num5);
 console.log(myFirstName , mySurname , num1 , num4 ,num5);
 console.log(num1 + num3 + num5 , mySurname , myFirstName , num4 , num2);
+console.log( myFirstName + mySurname + num2 + num3);
