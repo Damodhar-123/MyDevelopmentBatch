@@ -43,3 +43,12 @@ let employees = [
 console.log(employees[0].Name);
 console.log(employees[2].Name);
 console.log(employees.length);
+
+let List = [
+    [ 'adddd', 'bbbbb'],
+    ['ccccc', 'ddddd',[ 'cccc1','cccc2']],
+    [ 'fffff','ggggg']
+
+];
+console.log(List[2][0]);
+console.log(List[1][2][1]);
