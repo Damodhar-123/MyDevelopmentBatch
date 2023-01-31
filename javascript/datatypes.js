@@ -52,3 +52,33 @@ let List = [
 ];
 console.log(List[2][0]);
 console.log(List[1][2][1]);
+
+let obj = {
+    'posts': [
+        {
+            "id" : 1,
+            "title" : 'json',
+            "auther" : 'Sam'
+
+        }
+    ],
+    
+        'comments':[
+            {
+            "id": 1,
+            "body": 'some content',
+            "postId": 2
+        }
+    ],
+    'profile':{
+        
+          "name": "typicode"  
+        },
+    
+    'status': "success"
+
+    
+}
+console.log(obj.posts[0].auther);
+console.log(obj.comments[0].body);
+console.log(obj.status);
