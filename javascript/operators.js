@@ -37,6 +37,35 @@ console.log(--value4);
 var x= 40;
 var y= 30;
 
-if (x > 35 && y < 35) {
+if (x > 35 && y < 35) {    //logical and operator
     console.log("okokokokok");
 }
+  if (x> 55 || y< 55) {   // logical or operator
+    console.log('orrrrr');
+  }
+
+//   assignment operators
+ var myRank= 2;
+ var samRank = '2';
+
+//  equility operator
+  if (myRank == samRank) {                 // it checks only values of variables 
+    console.log('read noly equal value');
+  }
+  if (myRank === samRank) {
+    console.log('read same data type equal1');      // it checks data types as well values 
+  }
+  if (myRank !== samRank) {
+    console.log('not same value');         // not equal to operator
+  }
+//   ? ternory operator
+//? ternory operator :
+//condition-->(true)? true : false;
+
+ var city = 100;
+ if (city === 100) {
+    console.log( ' i am live in mumbai');
+ }else{
+    console.log('i am live in pune');
+ }
+ city === 100 ? console.log('i am in mumbai') : console.log('i am in pune');
