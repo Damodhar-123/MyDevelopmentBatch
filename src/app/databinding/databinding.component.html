@@ -1,0 +1,28 @@
+<p>databinding works!</p>
+{{data}}
+<br>
+Name <input type="text" value="Raj">  <br>
+<br>
+Value<input type="text" [value]="myName"> <br>
+<br>
+ <input type="text" value = {{myValue}}>
+ <br>
+
+ {{getValue()}}
+ <br>
+
+ {{20+60}}
+ <br>
+ {{no == 70}}
+ <br>
+
+ <br>
+ <!-- two way databinding -->
+
+Name <input type="text" [(ngModel)] = 'myValue' > <br>
+
+
+{{myValue}}
+<br>
+{{changeInputValue()}}
+ 

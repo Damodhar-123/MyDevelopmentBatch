@@ -1,0 +1,11 @@
+<p>user works!</p>
+<h1>Header</h1>
+<input type="text" #inputBox (keyup)="myFunction(inputBox.value)" >Enter Name Here....
+<button (click)="myFunction(inputBox.value)">click</button>
+inputBoxValue : {{inputBoxValue}}
+<br>
+<br>
+{{arrayItem}}
+<br>
+<input type="checkbox" value="item_1" (change)="checkboxEvent($event)"> item 1   <br> <br>
+<input type="checkbox" value="item_2" (change)="checkboxEvent($event)"> item 2   <br> <br>
