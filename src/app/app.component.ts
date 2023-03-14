@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent {
   mySurName2? : string;
   testProperty : any = 5000;
 
-  constructor(){
+  constructor( private router:Router){
    console.log(' inside constructor...');
    
   } 
@@ -23,5 +24,11 @@ export class AppComponent {
   test2(){
     this.mySurName2 = this.mySurName ;
     this.test();
+  }
+  redirect(){
+   this.router.navigateByUrl('/admin')
+  }
+  redirectabout(){
+    this.router.navigateByUrl('/aboutus-module')
   }
 }
