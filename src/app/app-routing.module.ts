@@ -18,7 +18,7 @@ const routes: Routes = [
   { path : 'contactus-module', loadChildren : ()=> import('./contactus/contactus.module').then(mod => mod.ContactusModule)},
   { path : 'aboutus-module', loadChildren :() => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
-  { path : "**", component : PagenotfoundComponent},
+  // { path : "**", component : PagenotfoundComponent},
 ];
 
 @NgModule({

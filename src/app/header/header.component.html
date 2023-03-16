@@ -1,0 +1,33 @@
+<!-- <p>header works!</p> -->
+<!-- <div class="header">
+<button routerLink="/home">home-module</button> &nbsp;
+<button routerLink="/landing">landing</button> &nbsp;
+<button routerLink="/home-module">home-module landing</button> &nbsp;
+<button routerLink="/home"> home-module-home</button> &nbsp;
+<button routerLink="/contactus-module">Contact Us</button>&nbsp;
+<button routerLink="/aboutus-module">About Us</button>&nbsp;
+<button routerLink="/admin">Admin</button> -->
+<!-- </div> -->
+<h2> Student Data</h2>
+<table>
+    <thead>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Mobile No</td>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of Data">
+        <td>{{student.Name}}</td>
+        <td>{{student.Age}}</td>
+        <td>{{student.Mobile}}</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<br>
+<br>
+<img src="../../assets/Images/images2.jpg" height="200px" width="200px" *ngIf="show"><br>
+<button (click)="toggle1()"> click</button>
+

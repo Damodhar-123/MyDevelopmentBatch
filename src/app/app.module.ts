@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+// import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeModule } from './home/home.module';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -15,7 +16,8 @@ import { HomeModule } from './home/home.module';
     AppComponent,
     UserComponent,
     DatabindingComponent,
-    PagenotfoundComponent,
+    // PagenotfoundComponent,
+    HeaderComponent,
     
   ],
   imports: [

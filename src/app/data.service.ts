@@ -9,7 +9,7 @@ export class DataService {
   age : 30,
   Mobno : 9763330729
  };
- carName = 'BMW' ;
+ carName? : string ;
 
  fruit? : string ;
 
