@@ -1,0 +1,27 @@
+.main{
+    height: 150px;
+    width: 150px;
+    background-color: chartreuse;
+}
+table,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+thead{
+    font-weight: bold;
+}
+.main1{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+}
+.main2{
+    background-color: brown;
+    height: 100px;
+    width: 200px;
+}
+.main3{
+    background-color: rgb(226, 226, 11);
+    height: 200px;
+    width: 200px;
+}

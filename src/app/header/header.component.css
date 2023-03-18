@@ -12,22 +12,22 @@ button{
     
 }
 .header{
-    height: 60px;
+    height: 30px;
     width: 100vw;
     background-color: rgb(21, 12, 12);
+    
 }
 button:hover{
     background-color: rgb(137, 200, 29);
     cursor: pointer;
 }
-/* table{
-    border: 1px solid black; */
 
-td{
+
+table , td ,tr {
     border: 1px solid black;
-    border-spacing: 0px;
-}
-tr{
     border-collapse: collapse;
-    
+    margin: 20px;
+}
+thead{
+    font-weight: 800;
 }

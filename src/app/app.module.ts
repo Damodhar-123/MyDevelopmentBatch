@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 // import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 
 
@@ -18,6 +19,7 @@ import { HeaderComponent } from './header/header.component';
     DatabindingComponent,
     // PagenotfoundComponent,
     HeaderComponent,
+    DirectivesComponent,
     
   ],
   imports: [

@@ -1,0 +1,69 @@
+<p>directives works!</p>
+ 
+ <div class="main" *ngIf="show">
+
+ </div>
+ <button (click)="showdiv()">show</button>&nbsp;
+ <button (click)="hidediv()">hide</button>&nbsp;
+ <button (click)="toggle()">Toggle</button>
+
+ <div *ngFor="let value of values">
+    <ol> <li>{{value}}</li></ol>
+
+ </div>
+ <table>
+    <thead>
+        <td>Name</td>
+        <td>Matches</td>
+        <td>Runs</td>
+    </thead>
+    <tbody>
+ <tr *ngFor="let player of players">
+   <td> {{player.Name}}</td>
+   <td>{{player.Matches}}</td>
+   <td>{{player.Runs}} </td>
+</tbody>
+</table>
+
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'yellow'">yellow</h3>
+    <h3 *ngSwitchCase="'green'">green</h3>
+    <h3 *ngSwitchCase="'red'">Red</h3>
+    <h3 *ngSwitchCase="'yellow'">yellow</h3>
+    <h3 *ngSwitchCase= "'default'">no match found</h3>
+
+
+</div>
+<div class="main main2">56565656655</div>
+
+<div [ngClass]="styleProperty ? styleProperty : 'main' ">
+
+</div>
+<br>
+
+<div [ngClass]="stylePropertyNew ? 'main' : 'main3' ">
+    property
+</div>
+<br>
+<div [ngClass]="setClass()">
+    function
+</div>
+<br>
+
+<!-- important -->
+<div [class.main1]="multipleStyle == 'Damodhar'" 
+     [class.main2]="multipleStyle == 'patil'"
+    [class.main3]="multipleStyle== 'Maske'">
+    this class is match
+</div>
+<br>
+<p [ngStyle]="{'background-color':inlineCss =='purple'?inlineCss:'yellow'}">paragraph</p>
+
+<br>
+<div>
+    <h1 [class.main]="headingProperty"
+        [class.main2]="!headingProperty">
+        heading 1
+    </h1>
+    
+</div>
