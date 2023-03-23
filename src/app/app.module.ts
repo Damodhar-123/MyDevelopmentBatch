@@ -9,6 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { CharaonlyDirective } from './charaonly.directive';
+import { FormComponent } from './form/form.component';
+import { NumonlyDirective } from './numonly.directive';
+import { SearchtextPipe } from './searchtext.pipe';
 
 
 
@@ -20,6 +24,10 @@ import { DirectivesComponent } from './directives/directives.component';
     // PagenotfoundComponent,
     HeaderComponent,
     DirectivesComponent,
+    CharaonlyDirective,
+    FormComponent,
+    NumonlyDirective,
+    SearchtextPipe,
     
   ],
   imports: [

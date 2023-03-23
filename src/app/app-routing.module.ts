@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home/home.component';
 import { LandingComponent } from './home/landing/landing.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
    { path: 'landing', component : LandingComponent},
   { path : 'home',component : HomeComponent},
   {path: 'directive',component :DirectivesComponent },
+  { path : 'form', component :FormComponent},
  
 
   // lazy loading
@@ -21,7 +23,7 @@ const routes: Routes = [
   { path : 'aboutus-module', loadChildren :() => import('./aboutus/aboutus.module').then(mod => mod.AboutusModule) },
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   
-  // { path : "**", component : PagenotfoundComponent},
+  { path : "**", component : PagenotfoundComponent},
 ];
 
 @NgModule({

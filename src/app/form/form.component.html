@@ -1,0 +1,35 @@
+<p>Form works!</p>
+<form >
+Enter Name:<input type="text" appCharaonly><br><br>
+Mobile No :  <input type="text" appNumonly>
+
+<h2>{{ title | uppercase}}</h2>
+
+<h3>{{title | lowercase}}</h3>
+
+<h3>{{title | titlecase}}</h3>
+
+<p> {{todayDate | date}}</p>
+
+<p> {{todayDate | date : 'MM/dd/yyyy'}}</p>
+
+<p>{{today}}</p>
+
+<p>{{ todayDate2 }}</p>
+
+<input type="text" [(ngModel)]="searchText" [ngModelOptions]="{standalone: true}"><br><br>
+
+<table>
+    <tr>
+        <th>Emplyee Name</th>
+        <th>Emplyee Age</th>
+        <th>Emplyee Salary</th>
+    </tr>
+    <tr *ngFor="let empData of employee | searchtext : searchText ">
+        <td>{{empData.Name}}</td>
+        <td>{{empData.Age}}</td>
+        <td>{{empData.Salary}}</td>
+    </tr>
+</table>
+
+</form>
