@@ -1,0 +1,58 @@
+.error{
+    color: rgb(245, 37, 37);
+    font-size: 15px;
+}
+.form{
+     background-color:rgb(181 219 255) ; 
+    margin: 20px 100px 100px 300px;
+    padding-left: 50px;
+    font-size: 22px;
+    height: 110%;
+    width: 40%;
+    text-align: left;
+    border: 5px solid rgb(139, 139, 229);
+    border-radius: 10px;
+}
+ button{
+    margin-left: 50px;
+    height: 30px;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: hsl(0, 86%, 5%); 
+ }
+
+input{
+    height: 20px;
+    width: 70%;
+
+
+}
+
+ 
+  
+
+
+.main-container{
+    min-height: 2000px;
+    width: 1000;
+    background-color: rgb(237, 241, 172);
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: auto;
+}
+input[type=checkbox]{
+    position:absolute;
+    height:22px;
+    width:22px;
+}
+input[type=radio]{
+
+    height:22px;
+    width:22px;
+}
+textarea{
+    width: 70%;
+}

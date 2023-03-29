@@ -31,5 +31,9 @@ Mobile No :  <input type="text" appNumonly>
         <td>{{empData.Salary}}</td>
     </tr>
 </table>
+<br> <br>
+&nbsp;  Currency transfer:<br>
+$ <input type="text" [(ngModel)]="amount" [ngModelOptions]="{standalone: true}" >
+&#8377;{{ amount|currency: amount}}
 
 </form>

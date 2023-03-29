@@ -1,0 +1,29 @@
+<!-- <p>templatedrivenform works!</p>
+
+Name: <input type="text" appCharaonly>
+Mobile : <input type="text" appNumonly> -->
+
+<p>Template Driven Form</p>
+<form class="form" #loginForm ="ngForm" autocomplete="off">
+    <h3>Login Form</h3>
+    <label >Name:</label><br>
+    <input type="text" ngModel name='username' #username="ngModel" placeholder="Enter Name Here..." required  minlength="4" pattern="[A-Za-z]*$"> <br>
+    <!-- <span *ngIf="!username.touched">Enter Your Name</span> -->
+    <span class="error" *ngIf="username.touched && username.errors?.['required']">Name is required*</span>
+    <span class="error" *ngIf="username.errors?.['minlength']">Enter min 4 charactors*</span>
+    <span class="error" *ngIf="username.errors?.['pattern'] && !username.errors?.['minlength']">Enter Alphabet's Only*</span>
+    <br>
+    <label >Password:</label><br>
+    <input type="text" ngModel name="password" #password="ngModel" required minlength="8" pattern="[a-z0-9@]*$" placeholder="Enter Password Here..."><br>
+    <span class="error" *ngIf="password.touched && password.errors?.['required'] ">Password required*</span> 
+    <span class="error" *ngIf="password.errors?.['minlength']">password should have min 8 digits*</span>
+    <span class="error" *ngIf="password.errors?.['pattern']&& !password.errors?.['minlength'] ">please Match format*</span><br>
+    
+    <label >Address </label><br>
+    <textarea name="" id="" cols="50" rows="4" ngModel name="address" #address="ngModel"required placeholder="Enter Your Address Here.... " pattern="[a-zA-Z0-9 -]*" ></textarea><br>
+    <span class="error" *ngIf="address.errors?.['pattern'] && !address.errors?.['required']">Invalid Format </span> <br><br>
+    <button [disabled]="!loginForm.valid" (click)="submit(loginForm.value)" >Submit</button>
+
+  
+</form>
+

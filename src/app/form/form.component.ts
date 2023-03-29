@@ -11,6 +11,7 @@ export class FormComponent {
  today =  new Date();
  todayDate2 : any;
  searchText : any;
+ amount = 200;
  
 
  employee =[
@@ -25,7 +26,7 @@ export class FormComponent {
  }
  dateFormate(){
   let day = this.today.getDate();
-  let Month = this.today.getMonth();
+  let Month = this.today.getMonth() + 1;
   let year = this.today.getFullYear();
 
   this.todayDate2 = Month + '-' + day + '-' + year ;

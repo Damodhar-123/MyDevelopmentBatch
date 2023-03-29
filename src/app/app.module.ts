@@ -9,10 +9,11 @@ import { FormsModule } from '@angular/forms';
 import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
 import { DirectivesComponent } from './directives/directives.component';
-import { CharaonlyDirective } from './charaonly.directive';
 import { FormComponent } from './form/form.component';
-import { NumonlyDirective } from './numonly.directive';
 import { SearchtextPipe } from './searchtext.pipe';
+import { CurrencyPipe } from './currency.pipe';
+import { SharedModule } from './shared/shared.module';
+import { AngularFormsModule } from './angular-forms/angular-forms.module';
 
 
 
@@ -24,10 +25,12 @@ import { SearchtextPipe } from './searchtext.pipe';
     // PagenotfoundComponent,
     HeaderComponent,
     DirectivesComponent,
-    CharaonlyDirective,
+    // CharaonlyDirective,
     FormComponent,
-    NumonlyDirective,
+    // NumonlyDirective,
     SearchtextPipe,
+    CurrencyPipe,
+  
     
   ],
   imports: [
@@ -35,8 +38,11 @@ import { SearchtextPipe } from './searchtext.pipe';
     AppRoutingModule,
     FormsModule,
     // HomeModule,
-    
+      SharedModule,
+    AngularFormsModule
+     
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })

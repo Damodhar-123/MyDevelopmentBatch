@@ -1,0 +1,14 @@
+.error{
+    color: red;
+}
+.form{
+    background-color: aliceblue;
+    padding: 30px;
+    height: 320px;
+    width: 500px;
+    margin: auto;
+    border: 2px solid blue;
+}
+
+    
+
