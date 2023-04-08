@@ -1,48 +1,70 @@
 <div class="main-container">
-<div class="form" >
-<form  [formGroup]="studentDataForm">
-     <h2>Student Registration Form :</h2> <br>
-    <label>First Name:</label><br>
-    <input type="text" placeholder="Enter Name Here..." formControlName="firstname" size="55" ><br>
-    <span class="error" *ngIf="studentDataForm.get('firstname')?.touched 
-    && studentDataForm.get('firstname')?.errors?.['required'] ">Name is Required*</span>
-    <span class="error" *ngIf="studentDataForm.get('firstname')?.errors?.['minlength']">Min 2 Charactors Required* </span>
-    <span class="error" *ngIf="!studentDataForm.get('firstname')?.errors?.['minlength'] &&studentDataForm.get('firstname')?.errors?.['pattern']">Name Accept In Charactors Only* </span>
-    <br><br>
-    <label>Last Name:</label><br>
-    <input type="text" placeholder="Enter Last Name Here..." formControlName="lastname" size="55"> <br>
-    <span  class="error" *ngIf="studentDataForm.get('lastname')?.touched && studentDataForm.get('lastname')?.errors?.['required']">  Last Name is Required*</span>
-    <span class="error" *ngIf="studentDataForm.get('lastname')?.errors?.['minlength']">Min 3 Charactors Required*</span>
-    <br><br>
+  <div class="form">
+    <form [formGroup]="studentDataForm">
+      <h2>Student Registration Form :</h2> <br>
+      <label>First Name <span class="error"
+          *ngIf="studentDataForm.get('firstname')?.touched && studentDataForm.get('firstname')?.errors?.['required']">*</span>:</label><br>
+      <input type="text" placeholder="Enter Name Here..." formControlName="firstname"><br>
+      <span class="error" *ngIf="studentDataForm.get('firstname')?.touched 
+    && studentDataForm.get('firstname')?.errors?.['required'] ">Name is Required</span>
+      <span class="error" *ngIf="studentDataForm.get('firstname')?.errors?.['minlength']">Min 2 Charactors Required
+      </span>
+      <span class="error"
+        *ngIf="!studentDataForm.get('firstname')?.errors?.['minlength'] &&studentDataForm.get('firstname')?.errors?.['pattern']">Name
+        Accept In Charactors Only* </span>
+      <br><br>
+      <label>Last Name <span class="error"
+          *ngIf="studentDataForm.get('lastname')?.touched && studentDataForm.get('lastname')?.errors?.['required']">*</span>:</label><br>
+      <input type="text" placeholder="Enter Last Name Here..." formControlName="lastname"> <br>
+      <span class="error"
+        *ngIf="studentDataForm.get('lastname')?.touched && studentDataForm.get('lastname')?.errors?.['required']"> Last
+        Name is Required</span>
+      <span class="error" *ngIf="studentDataForm.get('lastname')?.errors?.['minlength']">Min 3 Charactors
+        Required*</span>
+      <br><br>
 
-    
-    <label >Mobile No:</label><br>
-    <input type="text" placeholder="Enter Mobile no.." formControlName="mobile" size="55"> <br>
-    <span class="error" *ngIf="studentDataForm.get('mobile')?.touched && studentDataForm.get('mobile')?.errors?.['required']">Please Enter Mobile No.*</span>
-    <span class="error" *ngIf="studentDataForm.get('mobile')?.errors?.['minlength']">Mobile No Should Have 10 Digits*</span>
-    <span class="error" *ngIf="studentDataForm.get('mobile')?.errors?.['pattern'] && !studentDataForm.get('mobile')?.errors?.['minlength']">Enter Numbers Only* </span>
-    <span class="error" *ngIf="studentDataForm.get('mobile')?.errors?.['maxlength'] && !studentDataForm.get('mobile')?.errors?.['pattern']">Maximun 10 Numbers Allowed*</span>
 
-    <br>
-         
-    <label >Address:</label><br>
-    <textarea  cols="50" rows="03" placeholder="Enter Your Address Here...." formControlName="address"></textarea><br>
-    <span class="error" *ngIf="studentDataForm.get('address')?.touched && studentDataForm.get('address')?.errors?.['required']">Address Required* </span>
-    <span class="error" *ngIf="studentDataForm.get('address')?.errors?.['pattern']">Invalid Format*</span>
-    <br>
-    <label >Email Id:</label><br>
-    <input type="email" formControlName="email" size="55"><br>
-    <span class="error" *ngIf="studentDataForm.get('email')?.touched && studentDataForm.get('email')?.errors?.['required']"> Enter email id</span><br>
-    
-    <label>Gender:</label><br>
-    <input type="radio" formControlName="Gender" value="male" name="Gender" >Male
-    <input type="radio" formControlName="Gender" value="female" name="Gender" >Female <br>
-    
-    <br>
-    <label>Date Of Birth:</label><br>
-    <input type="date" > <br><br>
+      <label>Mobile No <span class="error"
+          *ngIf="studentDataForm.get('mobile')?.touched && studentDataForm.get('mobile')?.errors?.['required']">*</span>:</label><br>
+      <input type="text" placeholder="Enter Mobile no.." formControlName="mobile"> <br>
+      <span class="error"
+        *ngIf="studentDataForm.get('mobile')?.touched && studentDataForm.get('mobile')?.errors?.['required']">Mobile No
+        Required</span>
+      <span class="error" *ngIf="studentDataForm.get('mobile')?.errors?.['minlength']">Mobile No Should Have 10
+        Digits*</span>
+      <span class="error"
+        *ngIf="studentDataForm.get('mobile')?.errors?.['pattern'] && !studentDataForm.get('mobile')?.errors?.['minlength']">Enter
+        Numbers Only </span>
+      <span class="error"
+        *ngIf="studentDataForm.get('mobile')?.errors?.['maxlength'] && !studentDataForm.get('mobile')?.errors?.['pattern']">Maximun
+        10 Numbers Allowed</span>
 
-    <!-- <label>Select State:</label>
+      <br>
+
+      <label>Address <span class="error"
+          *ngIf="studentDataForm.get('address')?.touched && studentDataForm.get('address')?.errors?.['required']">*</span>:</label><br>
+      <textarea cols="50" rows="03" placeholder="Enter Your Address Here...." formControlName="address"></textarea><br>
+      <span class="error"
+        *ngIf="studentDataForm.get('address')?.touched && studentDataForm.get('address')?.errors?.['required']">Address
+        Required </span>
+      <span class="error" *ngIf="studentDataForm.get('address')?.errors?.['pattern']">Invalid Format</span>
+      <br>
+      <label>Email Id <span class="error"
+          *ngIf="studentDataForm.get('email')?.touched && studentDataForm.get('email')?.errors?.['required']">*</span>:</label><br>
+      <input type="email" formControlName="email" size="55"><br>
+      <span class="error"
+        *ngIf="studentDataForm.get('email')?.touched && studentDataForm.get('email')?.errors?.['required']"> Enter email
+        id</span><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" formControlName="Gender" value="male" name="Gender">Male
+      <input type="radio" formControlName="Gender" value="female" name="Gender">Female <br>
+
+      <br>
+      <label>Date Of Birth:</label><br>
+      <input type="date" formControlName="date"> <br><br>
+
+      <!-- <label>Select State:</label>
     <select>
         <option>Maharashtra</option>
         <option>Goa</option>
@@ -51,24 +73,36 @@
         <option>Haryana</option>
         <option>Tamilnadu</option>
     </select><br><br> -->
-    <label>Password:</label><br>
-    <input type="password" placeholder="Password..." formControlName="password" size="55"><br>
-    <span class="error" *ngIf="studentDataForm.get('password')?.touched && studentDataForm.get('password')?.errors?.['required']">Please Enter Password*</span>
-    <span class="error" *ngIf="studentDataForm.get('password')?.errors?.['minlength']">Password Should Have Atleast 8 Digits*</span>
-    <span class="error" *ngIf="studentDataForm.get('password')?.errors?.['pattern'] && !studentDataForm.get('password')?.errors?.['minlength']">Invalid Format*</span>
+      <label>Password <span class="error"
+          *ngIf="studentDataForm.get('password')?.touched && studentDataForm.get('password')?.errors?.['required']">*</span>:</label><br>
+      <input [type]="showPassword ? 'text' : 'password'"  placeholder="Password..." formControlName="password" (keyup)="passwordValition($event)"><button (click)="showPasswordFun()">show</button> <br>
+      <span class="error"
+        *ngIf="studentDataForm.get('password')?.touched && studentDataForm.get('password')?.errors?.['required']">Please
+        Enter Password</span>
+      <span class="error" *ngIf="studentDataForm.get('password')?.errors?.['minlength']">Password Should Have Atleast 8
+        Digits*</span>
+      <span class="error"
+        *ngIf="studentDataForm.get('password')?.errors?.['pattern'] && !studentDataForm.get('password')?.errors?.['minlength']">Invalid
+        Format</span>
+        <!-- <span class="error" *ngIf="isMatched">Password not matched</span> -->
 
-    <br>
-    <label>Confirm Password</label><br>
-    <input type="password" placeholder="Confirm Password.." formControlName="confirmpass" > <br>
-    <span class="error" *ngIf="studentDataForm.get('confirmpass')?.touched && studentDataForm.get('confirmpass')?.errors?.['required']">Confirm Password Required*</span>
-    <br>
-    <label>Accept Terms and conditions*</label>
-    <input type="checkbox" formControlName="cb"  ><br>
-    <span class="error" *ngIf="studentDataForm.get('cb')?.touched && studentDataForm.get('cb')?.errors?.['required']" >please Accept terms and conditions*</span>
-      <br><br> 
-      
-     <button [disabled] = "!studentDataForm.valid" (click)="submit()" >Submit</button> <br><br>
+      <br>
+      <label>Confirm Password</label><br>
+      <input [type]= "showPassword ? 'text' :'password' "placeholder="Confirm Password.." formControlName="confirmpass"  (keyup)="confirmPasswordValition($event)"><button (click)="showPasswordFun()">show</button>  <br>
+      <!-- <span class="error"
+        *ngIf="studentDataForm.get('confirmpass')?.touched && studentDataForm.get('confirmpass')?.errors?.['required']">Confirm
+        Password Required</span> -->
+        <span class="error" *ngIf="isMatched ">Password not matched</span>
+      <br>
 
-</form>
-</div>
+      <input type="checkbox" formControlName="cb"><br> <label>Accept Terms and conditions*</label><br>
+      <span class="error"
+        *ngIf="studentDataForm.get('cb')?.touched && studentDataForm.get('cb')?.errors?.['required']">please Accept
+        terms and conditions*</span>
+      <br><br>
+
+      <button [disabled]="!studentDataForm.valid" (click)="submit()">Submit</button> <br><br>
+
+    </form>
+  </div>
 </div>

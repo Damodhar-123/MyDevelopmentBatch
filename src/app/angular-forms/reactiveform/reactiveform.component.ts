@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CheckboxRequiredValidator, FormBuilder, FormGroup, Validators } from '@angular/forms';
+
 import { __values } from 'tslib';
 
 @Component({
@@ -9,6 +10,12 @@ import { __values } from 'tslib';
 })
 export class ReactiveformComponent {
  studentDataForm!: FormGroup;
+ showPassword : boolean = false;
+  password: any;
+  // isMatched: boolean;
+  confirmPassword: any;
+  isMatched: boolean= false;
+
   constructor( private formBuilder: FormBuilder){
     
   }
@@ -23,15 +30,41 @@ export class ReactiveformComponent {
       address:['',[ Validators.required, Validators.pattern('[A-Za-z0-9 -]*')]],
       password:['',[Validators.required,Validators.minLength(8),Validators.pattern('[a-z0-9@#$-]*$')]],
       confirmpass:['',[Validators.required]],
-      cb:[false, Validators.requiredTrue],
+      cb:['', [Validators.requiredTrue]],
        Gender:['male',[Validators.required]],
-      //  date:['',Validators.requiredTrue],
+        date:['',Validators.required],
        email:['', [Validators.required]]
     })
+    
   }
   submit(){
   
     console.log(this.studentDataForm.value);
     
   }
+  passwordValition(inputPassword:any){
+    console.log('pass',inputPassword.target.value);
+    this.password = inputPassword.target.value;
+    if(this.password ==  this.confirmPassword  ){
+      this.isMatched = false;
+    }
+    else{
+     this.isMatched = true;
+    }
+
+}
+
+confirmPasswordValition(confirmPass:any){
+   this.confirmPassword = confirmPass.target.value;
+   if(this.password ==  this.confirmPassword  ){
+     this.isMatched = false;
+   }
+   else{
+    this.isMatched = true;
+   }
+}
+showPasswordFun(){
+  this.showPassword =!this.showPassword;
+}
+
 }
